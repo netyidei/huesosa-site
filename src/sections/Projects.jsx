@@ -27,21 +27,30 @@ const projects = [
   }
 ];
 
+import { motion } from 'framer-motion';
+
 const Projects = () => {
   return (
     <section className="py-20 px-6 max-w-6xl mx-auto">
-      <h2 className="text-3xl font-light text-slate-900 mb-16 tracking-tight text-center md:text-left">
-        Selected Work
-      </h2>
-      
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-        {projects.map((project) => (
-          <ProjectCard 
-            key={project.id} 
-            {...project}
-          />
-        ))}
-      </div>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        <h2 className="text-3xl font-light text-slate-900 dark:text-white mb-16 tracking-tight text-center md:text-left">
+          Selected Work
+        </h2>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          {projects.map((project) => (
+            <ProjectCard 
+              key={project.id} 
+              {...project}
+            />
+          ))}
+        </div>
+      </motion.div>
     </section>
   );
 };
