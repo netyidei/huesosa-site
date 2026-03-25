@@ -11,7 +11,7 @@ const Contact = () => {
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <h2 className="text-4xl md:text-6xl font-black tracking-tighter text-slate-900 dark:text-white mb-6">
+        <h2 className="text-5xl md:text-8xl font-black tracking-tighter text-slate-900 dark:text-white mb-6">
           Let's build something.
         </h2>
         <p className="text-slate-500 dark:text-slate-400 text-lg md:text-xl font-light mb-12 max-w-2xl mx-auto">

@@ -10,14 +10,18 @@ const icons = {
     Code2
 };
 
-const ProjectCard = ({ title, description, tags, iconName, isSpecial }) => {
+const ProjectCard = ({ title, description, tags, iconName, isSpecial, isRetro }) => {
   // Safe icon lookup
   const Icon = icons[iconName] || Layout;
 
   return (
     <motion.div 
       whileHover={{ y: -5, scale: 1.01 }}
-      className={`group p-8 border border-slate-100 rounded-2xl transition-shadow duration-300 hover:shadow-xl hover:shadow-slate-200/50 bg-white flex flex-col ${isSpecial ? 'hover:ring-1 hover:ring-indigo-500/20' : ''}`}
+      className={`group p-8 border border-slate-100 rounded-2xl transition-all duration-300 bg-white flex flex-col 
+      ${isRetro 
+        ? 'hover:shadow-[8px_8px_0px_rgba(0,0,0,1)] hover:border-slate-900 rounded-none' 
+        : 'hover:shadow-xl hover:shadow-slate-200/50'} 
+      ${isSpecial && !isRetro ? 'hover:ring-1 hover:ring-indigo-500/20' : ''}`}
     >
       <div className="flex justify-between items-start mb-6">
         <div className="p-3 bg-slate-50 rounded-xl group-hover:bg-indigo-50 transition-colors">

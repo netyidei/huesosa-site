@@ -8,7 +8,7 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <h1 className="text-4xl md:text-6xl font-black tracking-tighter text-slate-900 dark:text-white text-center">
+        <h1 className="text-5xl md:text-8xl font-black tracking-tighter text-slate-900 dark:text-white text-center">
           Vibe is loading...
         </h1>
       </motion.div>

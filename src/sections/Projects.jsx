@@ -9,7 +9,8 @@ const projects = [
     description: "A pixel-perfect recreation of the classic soul-dodging mechanics, built entirely in Python with Pygame. Focuses on hitboxes and frame-perfect interactions.",
     tags: ["Python", "Pygame", "Game Dev"],
     iconName: "Gamepad2",
-    isSpecial: true
+    isSpecial: true,
+    isRetro: true
   },
   {
     id: 2,

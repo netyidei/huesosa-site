@@ -10,8 +10,8 @@ function App() {
   const [theme, setTheme] = useState('light')
 
   return (
-    <div className={`${theme} min-h-screen transition-colors duration-300`}>
-      <div className="bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 min-h-screen transition-colors duration-300">
+    <div className={`${theme} min-h-screen transition-colors duration-300 overflow-x-hidden`}>
+      <div className="bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 min-h-screen transition-colors duration-300 overflow-x-hidden">
         <ThemeToggle theme={theme} setTheme={setTheme} />
         <Navbar />
         <main className="flex flex-col">

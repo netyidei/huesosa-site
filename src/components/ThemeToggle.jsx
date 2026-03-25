@@ -10,7 +10,7 @@ const ThemeToggle = ({ theme, setTheme }) => {
   return (
     <button
       onClick={toggleTheme}
-      className="fixed top-4 right-4 p-3 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border border-slate-200 dark:border-slate-800 rounded-full shadow-sm transition-all duration-300 hover:scale-105 active:scale-95 z-50 group"
+      className="fixed bottom-6 right-6 md:bottom-auto md:top-6 md:right-6 p-3 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border border-slate-200 dark:border-slate-800 rounded-full shadow-lg md:shadow-sm transition-all duration-300 hover:scale-105 active:scale-95 z-50 group"
       aria-label="Toggle Vibe"
     >
       <AnimatePresence mode="wait" initial={false}>
