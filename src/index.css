@@ -4,7 +4,6 @@
 
 @layer base {
   body {
-    background-color: theme('colors.background');
-    color: #ffffff;
+    @apply antialiased;
   }
 }
